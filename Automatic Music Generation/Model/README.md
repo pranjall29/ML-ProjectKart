@@ -18,6 +18,8 @@ WaveNet is an audio generative model based on the PixelCNN architecture. In orde
 
 LSTM is a novel recurrent network architecture training with an appropriate gradient-based learning algorithm. LSTM is designed to overcome error back-flow problems.
 
+
+Dataset: https://www.kaggle.com/anubhavjin/midi-data-containing-melodies
 ## Wavenet Approach
 
 WaveNet takes the chunk of a raw audio wave as an input. Raw audio wave refers to the representation of a wave in the time series domain. Given the sequence of the amplitude values, WaveNet tries to predict the successive amplitude value.We can infer from the above that the output of every chunk depends only on the past information ( i.e. previous timesteps) but not on the future timesteps. Hence, this task is known as Autoregressive task and the model is known as an Autoregressive model.
